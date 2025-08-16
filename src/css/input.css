@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-quicksand: 'Quicksand', 'sans-serif';
+  --color-primary: #ff623e;
+  --color-darkBg: #000000;
+  --color-lightBg: #ffffff;
+  --color-abu: #aaaaaa;
+  --color-orange2: #ff6c37;
+  --color-hitam2: #0a0d12;
+  --color-abu2: #717680;
+  --color-orange3: #cc4e32;
+  --color-abu3: #181d27;
+  --color-abu4: #a4a7ae;
+  --color-abu5: #dfdfdf;
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(25%);
+    }
+    50% {
+      transform: translateX(-330%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee-lg {
+    0% {
+      transform: translateX(10%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(10%);
+    }
+  }
+
+  .animate-marquee-lg {
+    animation: marquee-lg 20s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee-card {
+    0% {
+      transform: translateX(25%);
+    }
+    50% {
+      transform: translateX(-230%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
+  .animate-marquee-card {
+    animation: marquee-card 30s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee-card-lg {
+    0% {
+      transform: translateX(20%);
+    }
+    50% {
+      transform: translateX(-220%);
+    }
+    100% {
+      transform: translateX(20%);
+    }
+  }
+
+  .animate-marquee-card-lg {
+    animation: marquee-card-lg 30s linear infinite;
+  }
+}

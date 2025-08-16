@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <!-- DEFAULT STYLE MOBILE SCREEN 394 PX & DESKTOP SCREEN LG 1024 PX -->
+
+  <!-- Toggle Dark Mode -->
+  <div class="flex fixed top-6 lg:top-6 left-38.5 lg:left-65 z-30">
+    <button
+      class="bg-primary text-lightBg p-0 font-extrabold rounded-full cursor-pointer hover:opacity-90"
+      onclick="document.documentElement.classList.toggle('dark')"
+    >
+      &#x2600;&#x1F319;
+    </button>
+  </div>
+
+  <body
+    class="font-quicksand box-border bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg lg:px-20"
+  >
+    <!-- Header -->
+    <header class="sticky top-0 z-25 backdrop-blur-lg pb-4">
+      <div
+        class="flex w-auto px-4 pt-5 items-center justify-between shrink-0 backdrop-blur-2xl"
+      >
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2.5">
+          <img
+            src="assets/logo-symbol.svg"
+            alt="Company Logo"
+            class="h-8 w-auto"
+          />
+          <span class="text-2xl font-bold">AryaFM</span>
+        </a>
+
+        <!-- Navbar Middle Desktop -->
+        <nav
+          class="hidden md:flex gap-6 items-center text-base md:text-sm font-semibold"
+        >
+          <a href="#home" class="hover:text-primary">About</a>
+          <a href="#service" class="hover:text-primary">Service</a>
+          <a href="#project" class="hover:text-primary">Projects</a>
+          <a href="#testimoni" class="hover:text-primary">Testimonials</a>
+          <a href="#faq" class="hover:text-primary">FAQ</a>
+        </nav>
+
+        <!-- Button Header Desktop -->
+        <a
+          href="#contact"
+          class="hidden md:inline-block bg-primary text-white px-10 py-2 rounded-3xl text-sm font-bold cursor-pointer hover:shadow-lg hover:opacity-90"
+        >
+          Let's Talk
+        </a>
+
+        <!-- Hamburger Icon & Close Icon-->
+        <div class="md:hidden">
+          <button
+            id="menu-toggle"
+            class="md:hidden text-2xl cursor-pointer hover:shadow-lg hover:opacity-90"
+          >
+            <span id="icon-hamburger">&#9776;</span>
+            <span id="icon-close" class="hidden">&#10006;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navbar Mobile -->
+      <div
+        id="mobile-menu"
+        class="hidden absolute w-full h-[910px] md:hidden bg-lightBg text-darkBg dark:bg-darkBg dark:text-lightBg px-4 pb-4 flex-col justify-items-start text-base font-semibold"
+      >
+        <a
+          href="#about"
+          class="block w-full px-4 py-3 hover:bg-abutext-abu4 rounded-3xl hover:text-white text-left"
+          >About</a
+        >
+        <a
+          href="#service"
+          class="block w-full px-4 py-3 hover:bg-abutext-abu4 rounded-3xl hover:text-white text-left"
+          >Service</a
+        >
+        <a
+          href="#project"
+          class="block w-full px-4 py-3 hover:bg-abutext-abu4 rounded-3xl hover:text-white text-left"
+          >Projects</a
+        >
+        <a
+          href="#testimoni"
+          class="block w-full px-4 py-3 hover:bg-abutext-abu4 rounded-3xl hover:text-white text-left"
+          >Testimonials</a
+        >
+        <a
+          href="#faq"
+          class="block w-full px-4 py-3 hover:bg-abutext-abu4 rounded-3xl hover:text-white text-left"
+          >FAQ</a
+        >
+
+        <!-- Button Navbar Mobile -->
+        <a
+          href="#contact"
+          class="block w-full bg-primary text-center text-lightBg mt-4 px-4 py-2 rounded-3xl cursor-pointer hover:shadow-lg hover:opacity-90"
+        >
+          Let's Talk
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative mt-20 lg:-mt-20">
+      <div class="flex flex-col lg:flex-row">
+        <div class="self-center px-4 text-base lg:w-1/2 lg:absolute">
+          <h1 class="text-3xl font-bold">
+            Your Tech Partner for
+            <strong class="text-primary">Smarter Growth</strong>
+          </h1>
+          <p
+            class="text-base lg:text-sm font-semibold mt-2 mb-10 leading-relaxed"
+          >
+            We deliver tailored IT solutions to help you scale with speed and
+            confidence.
+          </p>
+          <a
+            href="#contact"
+            class="block w-full text-center bg-primary text-white py-2 rounded-3xl lg:w-30 text-sm font-bold cursor-pointer hover:shadow-lg hover:opacity-90"
+          >
+            Let's Talk
+          </a>
+        </div>
+
+        <div
+          class="w-full self-end lg:w-1/2 mt-12 lg:relative lg:-z-10 lg:left-1/2"
+        >
+          <div class="rounded-none">
+            <img
+              src="assets/hero-image-dark.png"
+              alt="Tech Illustration"
+              class="mx-auto hidden dark:block mask-x-from-70% mask-y-from-70%"
+            />
+          </div>
+          <div class="rounded-none">
+            <img
+              src="assets/hero-image-light.png"
+              alt="Tech Illustration"
+              class="mx-auto block dark:hidden mask-x-from-70% mask-y-from-70%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Section -->
+    <section id="trusted" class="mx-auto mt-10">
+      <h2 class="text-base font-semibold text-center">
+        Trusted by Global Innovators & Leading Brands
+      </h2>
+      <div
+        class="flex gap-6 lg:gap-2 justify-center py-10 relative overflow-hidden bg-lightBg dark:bg-darkBg"
+      >
+        <!-- Mask kiri -->
+        <div
+          class="absolute left-0 top-0 h-full w-24 z-20 bg-gradient-to-r from-lightBg via-lightBg/70 dark:from-darkBg dark:via-darkBg/70 to-transparent pointer-events-none"
+        ></div>
+
+        <!-- Mask kanan -->
+        <div
+          class="absolute right-0 top-0 h-full w-24 z-20 bg-gradient-to-l from-lightBg via-lightBg/70 dark:from-darkBg dark:via-darkBg/70 to-transparent pointer-events-none"
+        ></div>
+
+        <!-- Marquee Mobile-->
+        <div
+          class="whitespace-nowrap animate-marquee flex items-center gap-12 lg:hidden"
+        >
+          <img
+            src="assets/adobe-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/upwork-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/zoom-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/postman-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/databricks-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/airbnb-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/dropbox-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/paypal-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/netflix-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+        </div>
+
+        <!-- Marquee Desktop -->
+        <div
+          class="hidden lg:flex whitespace-nowrap animate-marquee-lg items-center gap-12"
+        >
+          <img
+            src="assets/adobe-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/upwork-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/zoom-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/postman-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/databricks-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/airbnb-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/dropbox-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/paypal-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+          <img
+            src="assets/netflix-logo.svg"
+            alt=""
+            class="grayscale hover:grayscale-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="mx-auto my-10 pb-10">
+      <div class="mt-10 px-2">
+        <h2 class="text-3xl font-bold text-center">
+          End-to-End IT Solutions That Drive Results
+        </h2>
+        <p class="text-base mt-5 text-center text-abu4">
+          From strategy to execution, we deliver solutions that grow your
+          business.
+        </p>
+      </div>
+      <div class="w-full flex justify-center pt-8">
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center text-lightBg"
+        >
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg size-40 lg:size-52 rounded-full flex flex-col justify-center items-center"
+          >
+            <h3 class="text-primary text-4xl font-bold">50+</h3>
+            <p class="text-sm px-3 text-center">Projects Delivered</p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg size-40 lg:size-52 rounded-full flex flex-col justify-center items-center"
+          >
+            <h3 class="text-primary text-4xl font-bold">5+</h3>
+            <p class="text-sm px-3 text-center">Years of Experience</p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg size-40 lg:size-52 rounded-full flex flex-col justify-center items-center"
+          >
+            <h3 class="text-primary text-4xl font-bold">10+</h3>
+            <p class="text-sm px-3 text-center">Industry Awards Won</p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg size-40 lg:size-52 rounded-full flex flex-col justify-center items-center"
+          >
+            <h3 class="text-primary text-4xl font-bold">100%</h3>
+            <p class="text-sm px-3 text-center">Client Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="mx-auto my-10 pt-10 relative">
+      <h2 class="text-3xl font-bold text-center">Our Process</h2>
+      <p class="text-base my-5 text-center text-abu4">
+        Clear steps. Smart execution. Results you can count on.
+      </p>
+
+      <!-- Garis tengah -->
+      <!-- <div
+        class="absolute left-12 lg:left-1/2 top-57 lg:top-3/12 bottom-0 w-1 h-7/10 lg:h-6/9 bg-abu3 -translate-x-1/2"
+      ></div> -->
+
+      <div
+        class="grid gap-5 w-3/4 lg:w-full ml-auto lg:grid-cols-2 relative z-10 gap-x-20 mt-10 px-4"
+      >
+        <!-- Step 1 -->
+        <div class="lg:relative">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">Discovery & Consultation</h3>
+            <p class="text-xs text-abu4">Understand Your Needs & Goals</p>
+          </div>
+
+          <div
+            class="lg:hidden absolute -left-15 top-14 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              1
+            </div>
+          </div>
+          <div
+            class="hidden lg:block absolute -right-15 top-1/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              1
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative lg:pt-25">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">Planning & Strategy</h3>
+            <p class="text-xs text-abu4">Build a Clear, Scalable Roadmap</p>
+          </div>
+
+          <div
+            class="lg:hidden absolute -left-19 top-2/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              2
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block absolute -left-15 top-3/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              2
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">Design & Prototyping</h3>
+            <p class="text-xs text-abu4">Craft UX That Converts</p>
+          </div>
+          <div
+            class="lg:hidden absolute -left-19 top-2/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              3
+            </div>
+          </div>
+          <div
+            class="hidden lg:block absolute -right-15 top-1/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              3
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative lg:pt-25">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">
+              Development & Implementation
+            </h3>
+            <p class="text-xs text-abu4">Deliver With Speed & Precision</p>
+          </div>
+          <div
+            class="lg:hidden absolute -left-19 top-2/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              4
+            </div>
+          </div>
+          <div
+            class="hidden lg:block absolute -left-15 top-3/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              4
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="relative">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">Testing & Optimization</h3>
+            <p class="text-xs text-abu4">Ensure Quality at Every Step</p>
+          </div>
+          <div
+            class="lg:hidden absolute -left-19 top-2/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              5
+            </div>
+          </div>
+          <div
+            class="hidden lg:block absolute -right-15 top-1/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              5
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="relative lg:pt-25">
+          <div
+            class="bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg p-6 rounded-lg"
+          >
+            <h3 class="text-base font-semibold">Launch & Growth</h3>
+            <p class="text-xs text-abu4">
+              Scale, Measure & Improve Continuously
+            </p>
+          </div>
+          <div
+            class="lg:hidden absolute -left-19 top-2/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              6
+            </div>
+          </div>
+          <div
+            class="hidden lg:block absolute -left-15 top-3/4 transform -translate-y-1/2 z-20"
+          >
+            <div
+              class="w-10 h-10 bg-primary text-lightBg rounded-full flex items-center justify-center font-bold"
+            >
+              6
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="my-10 pt-10">
+      <div class="mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-2 text-center">
+          Smart IT Solutions That Grow With You
+        </h2>
+        <p class="text-sm mb-10 text-center text-abu4">
+          Tailored tech to boost efficiency, security, and results.
+        </p>
+        <div class="grid gap-8 text-lightBg lg:grid-cols-3 lg:gap-x-4">
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/Website.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">Web Development</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Build fast, scalable, and SEO-friendly websites.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/Mobile App.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">
+              Mobile App Development
+            </h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Native & cross-platform apps tailored to user needs.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/UX Design.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">UI/UX Design</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Delight users with intuitive and beautiful interfaces.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/Cloud.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">Cloud Solutions</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Secure and flexible cloud infrastructure for your growth.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/Software.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">Software Development</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Custom solutions built around your business logic.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/IT Infrastructure.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">IT Infrastructure</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Scale your backend with reliable tech foundations.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/Cybersecurity.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">
+              Cybersecurity Services
+            </h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Stay protected with enterprise-grade security.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/QAsolution.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">QA Solutions</h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Ensure performance with rigorous testing frameworks.
+            </p>
+          </div>
+          <div
+            class="bg-abu5 text-darkBg dark:bg-abu3 dark:text-lightBg p-4 rounded-2xl shadow relative px-6"
+          >
+            <img
+              src="assets/IT Consulting.png"
+              alt=""
+              class="w-16 h-16 absolute -top-6"
+            />
+            <br />
+            <h3 class="text-base font-bold text-left">
+              IT Consulting & Support
+            </h3>
+            <p class="text-[14px] text-abu4 mt-2">
+              Make smarter tech decisions with expert guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Section -->
+    <section id="industry" class="my-10 pt-2">
+      <div class="mx-auto px-4 my-10">
+        <h2 class="text-[32px] font-bold mb-2 text-left">
+          Built for Your Industry
+        </h2>
+        <p class="text-base mt-4 text-left text-abu4">
+          We've helped companies across industries launch smarter, faster, and
+          more securely.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-[1fr_3fr] px-4 gap-8 text-lightBg"
+      >
+        <div class="">
+          <ul class="flex flex-col items-start gap-5 text-abu4">
+            <li class="cursor-pointer">
+              <span
+                class="font-extrabold text-xl hover:text-primary active:text-darkBg"
+                >|</span
+              >
+              <span
+                class="font-bold hover:text-darkBg active:text-darkBg dark:hover:text-lightBg"
+                >Fintech</span
+              >
+            </li>
+            <li class="cursor-pointer">
+              <span
+                class="font-extrabold text-xl hover:text-primary active:text-darkBg"
+                >|</span
+              >
+              <span
+                class="font-bold hover:text-darkBg active:text-darkBg dark:hover:text-lightBg"
+                >E-Commerce</span
+              >
+            </li>
+            <li class="cursor-pointer">
+              <span
+                class="font-extrabold text-xl hover:text-primary active:text-darkBg"
+                >|</span
+              >
+              <span
+                class="font-bold hover:text-darkBg active:text-darkBg dark:hover:text-lightBg"
+                >Healthcare</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-start gap-5">
+          <h4 class="font-medium text-sm text-darkBg dark:text-lightBg">
+            We build secure, scalable, and compliant, fintech solutions - from
+            digital wallets to core banking systems - tailored to modern
+            financial needs.
+          </h4>
+          <img
+            src="assets/fintech.png"
+            alt="fintech image"
+            class="rounded-xl w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="mx-auto px-4 my-10 pt-10">
+      <h2 class="text-3xl font-bold mb-2 text-center">
+        From Vision to Launch!
+        <br />
+        Projects We're Proud Of
+      </h2>
+      <p class="text-base mb-8 text-center text-abu4">
+        Take a closer look at our recent work powering startups, enterprises,
+        and everything in between.
+      </p>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-darkBg dark:text-lightBg"
+      >
+        <div>
+          <img
+            src="assets/portofolio-1.png"
+            alt="Project1"
+            class="rounded-3xl shadow w-full h-auto"
+          />
+          <h4 class="text-primary font-semibold mt-2">Landing Page</h4>
+          <p class="font-semibold mt-1">Portofolio 1</p>
+        </div>
+        <div>
+          <img
+            src="assets/portofolio-2.png"
+            alt="Project2"
+            class="rounded-3xl shadow w-full h-auto"
+          />
+          <h4 class="text-primary font-semibold mt-2">Landing Page</h4>
+          <p class="font-semibold mt-1">Portofolio 2</p>
+        </div>
+        <div>
+          <img
+            src="assets/portofolio-3.png"
+            alt="Project3"
+            class="rounded-3xl shadow w-full h-auto"
+          />
+          <h4 class="text-primary font-semibold mt-2">Landing Page</h4>
+          <p class="font-semibold mt-1">Portofolio 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="mx-auto px-4 my-10 pt-12">
+      <h2 class="text-3xl font-bold mb-2 text-center">
+        What Partners Say About Working With Us
+      </h2>
+      <p class="text-base mt-5 mb-5 text-center text-abu4">
+        Trusted voices. Real experiences. Proven results.
+      </p>
+
+      <div
+        class="p-2 flex gap-2 lg:gap-2 justify-center py-1 relative overflow-hidden bg-lightBg dark:bg-darkBg lg:max-h-1/2"
+      >
+        <!-- Mask kiri -->
+        <div
+          class="absolute left-0 top-0 h-full w-24 z-20 bg-gradient-to-r from-lightBg via-lightBg/70 dark:from-darkBg dark:via-darkBg/70 to-transparent pointer-events-none"
+        ></div>
+
+        <!-- Mask kanan -->
+        <div
+          class="absolute right-0 top-0 h-full w-24 z-20 bg-gradient-to-l from-lightBg via-lightBg/70 dark:from-darkBg dark:via-darkBg/70 to-transparent pointer-events-none"
+        ></div>
+
+        <!-- Marquee Mobile -->
+        <div
+          class="whitespace-nowrap animate-marquee-card flex items-center lg:hidden"
+        >
+          <div class="flex gap-4 dark:hidden">
+            <img
+              src="assets/Testimonial Card John light.png"
+              alt="john"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Sarah light.png"
+              alt="sarah"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Chen light.png"
+              alt="john"
+              class=""
+            />
+          </div>
+          <div class="hidden gap-4 dark:flex">
+            <img
+              src="assets/Testimonial Card John dark.png"
+              alt="john"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Sarah dark.png"
+              alt="sarah"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Chen dark.png"
+              alt="john"
+              class=""
+            />
+          </div>
+        </div>
+
+        <!-- Marquee Desktop -->
+        <div
+          class="hidden lg:flex h-full items-center whitespace-nowrap animate-marquee-card-lg"
+        >
+          <div class="flex gap-4 dark:hidden">
+            <img
+              src="assets/Testimonial Card John light.png"
+              alt="john"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Sarah light.png"
+              alt="sarah"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Chen light.png"
+              alt="john"
+              class=""
+            />
+          </div>
+          <div class="hidden gap-4 dark:flex">
+            <img
+              src="assets/Testimonial Card John dark.png"
+              alt="john"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Sarah dark.png"
+              alt="sarah"
+              class=""
+            />
+            <img
+              src="assets/Testimonial Card Chen dark.png"
+              alt="john"
+              class=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="mx-auto px-4 my-10 pt-10">
+      <div class="grid gap-5">
+        <div
+          class="grid lg:grid-cols-2 justify-between lg:gap-80 border-b pb-10"
+        >
+          <div class="grid items-center">
+            <h2 class="text-3xl font-bold">Need Help? Start Here.</h2>
+          </div>
+          <div class="grid items-end">
+            <p class="text-base text-abu4 text-right">
+              Everything you need to know - all in one place.
+            </p>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-[2fr_1fr] gap-12">
+          <div>
+            <details class="border-b border-gray-700 py-6 group" open>
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                What services do you offer?
+                <span class="text-xl transition-transform group-open:rotate-90"
+                  >I</span
+                >
+              </summary>
+              <p class="mt-2 text-abu">
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+            <details class="border-b border-gray-700 py-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                How do I know if this is right for my business?
+                <span class="text-xl transition-transform group-open:rotate-90"
+                  >+</span
+                >
+              </summary>
+              <p class="mt-2 text-abu">
+                Book a free consult - we'll assess your goals and recommend the
+                right approach.
+              </p>
+            </details>
+            <details class="border-b border-gray-700 py-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                How much does a project cost?
+                <span class="text-xl transition-transform group-open:rotate-90"
+                  >+</span
+                >
+              </summary>
+              <p class="mt-2 text-abu">
+                Every project is different. Lets's talk about your needs to get
+                a tailored estimate.
+              </p>
+            </details>
+            <details class="border-b border-gray-700 py-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                How long does it take?
+                <span class="text-xl transition-transform group-open:rotate-90"
+                  >+</span
+                >
+              </summary>
+              <p class="mt-2 text-abu">
+                Depends on scope - but we always prioritize quality and
+                deadlines.
+              </p>
+            </details>
+            <details class="border-gray-700 pt-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+              >
+                Can I start with a small project first?
+                <span class="text-xl transition-transform group-open:rotate-90"
+                  >+</span
+                >
+              </summary>
+              <p class="mt-2 text-abu">
+                Absolutely. We often begin with MVPs or pilot projects.
+              </p>
+            </details>
+          </div>
+          <div class="flex flex-row justify-end">
+            <div
+              class="flex flex-col justify-around w-full p-5 rounded-3xl bg-primary gap-4"
+            >
+              <div>
+                <h3 class="text-3xl font-bold">Let's talk it through</h3>
+
+                <p class="mt-2">book a free consultation with our team.</p>
+              </div>
+              <img src="assets/Consultation.png" alt="" />
+              <a
+                href="#contact"
+                class="bg-darkBg text-lightBg dark:bg-lightBg dark:text-darkBg text-center font-bold py-2 rounded-3xl cursor-pointer hover:opacity-90"
+              >
+                Free Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact" class="mx-auto px-4 my-10 pt-14">
+      <div class="mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-bold text-center">
+          Ready to Start? Let's Talk.
+        </h2>
+        <p class="text-sm lg:text-base text-center text-abu4 mt-4">
+          Tell us what you need, and we'll get back to you soon.
+        </p>
+        <div class="lg:flex justify-center">
+          <form class="mt-10 lg:w-xl lg:flex lg:flex-col">
+            <div>
+              <label class="block mb-1 font-medium" for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="w-full p-3 border rounded-xl border-abu4 mt-2"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mt-4">
+              <label class="block mb-1 font-medium" for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full p-3 border rounded-xl border-abu4 mt-2"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mt-4">
+              <label class="block mb-1 font-medium" for="message"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="w-full p-3 border rounded-xl border-abu4 mt-2"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <div
+              class="text-sm grid grid-col gap-4 text-darkBg dark:text-lightBg mt-4"
+            >
+              <p>Services</p>
+              <div
+                class="grid grid-cols-1 gap-y-6 lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:grid-flow-col lg:text-xs"
+              >
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    checked
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">Web Development</p>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">Mobile App Development</p>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">UI-UX Design</p>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">Cloud Solutions</p>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">Software Development</p>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="accent-primary w-5 h-5 rounded-lg cursor-pointer hover:shadow-lg hover:opacity-90"
+                  />
+                  <p class="ml-2">Other</p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              href="home"
+              class="bg-primary w-full text-white font-bold px-6 py-3 rounded-3xl mt-8 cursor-pointer hover:shadow-lg hover:opacity-90"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mx-auto px-4 mb-10">
+      <div class="bg-abu5 dark:bg-abu3 border-0 rounded-3xl p-6">
+        <div
+          class="grid grid-col gap-6 lg:grid-cols-2 lg:items-center lg:gap-80"
+        >
+          <div
+            class="grid items-center lg:items-start lg:order-1 lg:grid-flow-col lg:grid-cols-[15fr_11fr] lg:place-items-end"
+          >
+            <img
+              src="assets/logo-symbol.svg"
+              alt="Logo"
+              class="w-10 h-10 mr-2"
+            />
+            <span
+              class="text-2xl font-bold lg:font-extrabold text-darkBg dark:text-lightBg"
+              >Arya FM</span
+            >
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold">LET'S DISCUSS YOUR IDEAS</h2>
+          </div>
+        </div>
+        <br />
+        <hr class="text-abu4" />
+
+        <div class="lg:flex lg:justify-between lg:items-center lg:pt-5">
+          <div
+            class="flex flex-col lg:flex-row text-base text-darkBg dark:text-lightBg py-6 gap-6"
+          >
+            <a href="#home" class="hover:text-orange-600">About</a>
+            <a href="#service" class="hover:text-orange-600">Service</a>
+            <a href="#project" class="hover:text-orange-600">Projects</a>
+            <a href="#testimoni" class="hover:text-orange-600">Testimonials</a>
+            <a href="#faq" class="hover:text-orange-600">FAQ</a>
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="#contact"
+              class="p-3 size-12 text-center border-2 border-abu2 rounded-4xl bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg hover:bg-blue-600"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#contact"
+              class="p-3 size-12 text-center border-2 border-abu2 rounded-full bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg hover:bg-pink-500"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#contact"
+              class="p-3 size-12 text-center border-2 border-abu2 rounded-full bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg hover:bg-blue-700"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#contact"
+              class="p-3 size-12 text-center border-2 border-abu2 rounded-full bg-abu5 dark:bg-abu3 text-darkBg dark:text-lightBg hover:bg-black"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconHamburger = document.getElementById('icon-hamburger');
+      const iconClose = document.getElementById('icon-close');
+
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        iconHamburger.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
